@@ -10,6 +10,7 @@ Clone the project:
 ```npm install```
 
 2. Create a .env file (no need to create if already exist)
+   <br />
    Copy your MongoDB URL and Auth secret-key
 ```
 DATABASE_URL=""
