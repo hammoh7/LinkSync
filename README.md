@@ -4,7 +4,18 @@
 
 ### Getting Started
 
-First, run the development server:
+Clone the project:
+
+Firstly create a .env file (no need to create if already exists)
+```
+DATABASE_URL=""
+AUTH_SECRET=""
+```
+
+Secondly, run the below command:
+```npm install```
+
+Then, run the development server:
 
 ```bash
 npm run dev
