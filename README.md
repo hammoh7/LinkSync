@@ -6,16 +6,17 @@
 
 Clone the project:
 
-Firstly create a .env file (no need to create if already exists)
+1. Run the command:
+```npm install```
+
+2. Create a .env file (no need to create if already exist)
+   Copy your MongoDB URL and Auth secret-key
 ```
 DATABASE_URL=""
 AUTH_SECRET=""
 ```
 
-Secondly, run the below command:
-```npm install```
-
-Then, run the development server:
+3. Run the development server:
 
 ```bash
 npm run dev
