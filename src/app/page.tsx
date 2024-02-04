@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,8 +21,14 @@ export default function Home() {
           <span className="font-medium bg-white py-2 pl-2 rounded-s-xl">
             linksn.aa/
           </span>
-          <input placeholder="username" className="py-2 font-medium rounded-e-xl outline-none" type="text" />
-          <Button className="h-8 ml-5">Join</Button>
+          <input
+            placeholder="username"
+            className="py-2 font-medium rounded-e-xl outline-none"
+            type="text"
+          />
+          <Button className="h-8 ml-5">
+            <Link href="/login">Join</Link>
+          </Button>
         </form>
       </section>
     </main>
