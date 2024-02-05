@@ -17,19 +17,21 @@ export default function Home() {
             Share your daily life and more, through LinkSync
           </h2>
         </div>
-        <form className="flex items-center">
-          <span className="font-medium bg-white py-2 pl-2 rounded-s-xl">
-            linksn.aa/
-          </span>
-          <input
-            placeholder="username"
-            className="py-2 font-medium rounded-e-xl outline-none"
-            type="text"
-          />
-          <Button className="h-8 ml-5">
-            <Link href="/login">Join</Link>
-          </Button>
-        </form>
+        <div>
+          <form className="flex items-center">
+            <span className="font-medium bg-white py-2 pl-2 rounded-s-xl">
+              linksn.aa/
+            </span>
+            <input
+              placeholder="username"
+              className="py-2 font-medium rounded-e-xl outline-none"
+              type="text"
+            />
+            <Button className="h-8 ml-5">
+              <Link href="/login">Join</Link>
+            </Button>
+          </form>
+        </div>
       </section>
     </main>
   );
