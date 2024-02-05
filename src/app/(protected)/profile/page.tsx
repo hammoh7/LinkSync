@@ -31,7 +31,7 @@ const Profile = async () => {
           </nav>
         </div>
       </nav>
-      {/* {JSON.stringify(session)} */}
+      {JSON.stringify(session)}
     </div>
   );
 };
