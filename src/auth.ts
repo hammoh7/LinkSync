@@ -3,13 +3,28 @@ import authConfig from "./auth.config";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { database } from "./lib/database";
 import { getUserById } from "./data/user";
-
 export const {
   handlers: { GET, POST },
   auth,
   signIn,
   signOut,
 } = NextAuth({
+  pages: {
+    signIn: "/login",
+    error: "/error",
+  },
+  events: {
+    async linkAccount({ user }) {
+      await database.user.update({
+        where: {
+          id: user.id,
+        },
+        data: {
+          emailVerified: new Date(),
+        },
+      });
+    },
+  },
   callbacks: {
     async session({ token, session }) {
       if (token.sub && session.user) {
@@ -18,7 +33,7 @@ export const {
       if (token.role && session.user) {
         session.user.role = token.role;
       }
-      return session;     
+      return session;
     },
     async jwt({ token }) {
       if (!token.sub) return token;

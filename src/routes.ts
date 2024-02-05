@@ -9,7 +9,7 @@ export const publicRoutes = ["/"];
  Authentication required
 */
 
-export const authRoutes = ["/login", "/register"];
+export const authRoutes = ["/login", "/register", "/error"];
 
 /* 
  Prefix for API authentication routes
