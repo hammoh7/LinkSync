@@ -4,7 +4,20 @@
 
 ### Getting Started
 
-First, run the development server:
+Clone the project:
+
+1. Run the command:
+```npm install```
+
+2. Create a .env file (no need to create if already exist)
+   <br />
+   Copy your MongoDB URL and Auth secret-key
+```
+DATABASE_URL=""
+AUTH_SECRET=""
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
