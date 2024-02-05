@@ -11,10 +11,16 @@ Clone the project:
 
 2. Create a .env file (no need to create if already exist)
    <br />
-   Copy your MongoDB URL and Auth secret-key
+   Create a AUTH_SECRET key. Copy your MongoDB URL, GITHUB & GOOGLE api keys
 ```
 DATABASE_URL=""
 AUTH_SECRET=""
+
+GITHUB_ID=
+GITHUB_SECRET_ID=
+
+GOOGLE_ID=
+GOOGLE_SECRET_ID=
 ```
 
 3. Run the development server:
